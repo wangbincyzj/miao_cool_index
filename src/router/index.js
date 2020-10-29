@@ -16,6 +16,28 @@ const routes = [
       }
     ]
   },
+  {
+    path: "/chat",
+    component: Layout,
+    redirect: "/client",
+    children: [
+      {
+        path: "client",
+        component: () => import("@/views/chat/Client")
+      }
+    ]
+  },
+  {
+    path: "/chat",
+    component: Layout,
+    redirect: "/admin",
+    children: [
+      {
+        path: "admin",
+        component: () => import("@/views/chat/Admin")
+      }
+    ]
+  },
 ]
 
 const router = new VueRouter({

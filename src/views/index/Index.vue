@@ -10,6 +10,7 @@ export default {
   name: "Index",
   components: {IndexVideo},
   methods: {
+
   }
 }
 </script>
