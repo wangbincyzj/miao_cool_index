@@ -1,7 +1,7 @@
 <template>
   <div id="header-wrapper"  :class="classObj">
     <div class="head-content container row">
-      <a href="" class="logo"></a>
+      <a href="" class="logo" style="color: white;font-size: 25px;">喵酷科技</a>
       <ul class="menu-list" @mouseleave="showHeadScreen=false">
         <li @mouseenter="showHeadScreen=true" class="menu-item col"
             v-for="item in 6">

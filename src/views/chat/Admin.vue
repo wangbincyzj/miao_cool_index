@@ -1,6 +1,5 @@
 <template>
     <div class="talk_con">
-        <Mywin/>
         <div class="talk_show" id="words">
             <div :class="[(i.role=='me')?'btalk':'atalk']" v-for="i in chatRecordList"><span>{{i.userNameChn}}：{{i.msg}}</span></div>
             <!-- <div class="btalk"><span>B说：还没呢，你呢？</span></div> -->
@@ -18,15 +17,13 @@
 </template>
 
 <script>
-    import Mywin from "@/components/Mywin"
     export default {
         name: "Admin",
-        components:{Mywin},
         data() {
             return {
                 chatRecordList: [
-                    // { person: 'A', say: '吃饭了吗？' },
-                    // { person: 'B', say: '还没呢，你呢？' },
+                    { person: 'A', say: '吃饭了吗？',role:'me' ,userNameChn:'A',msg:'111'},
+                    { person: 'B', say: '还没呢，你呢？',role:'you',userNameChn:'B',msg:'222' },
                 ],
                 msgObj:{
                         me:'admin',
