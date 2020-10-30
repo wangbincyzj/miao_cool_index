@@ -14,9 +14,10 @@
               </div>
               <div id="imgBtn" style="padding:10px;">
                 <input style="height: 38px;
-                width:85%;
+                width:300px;
                 float:left;
-                "/><button style="float: left;height: 38px;width:50px;margin-left:5px;">发送</button>
+                border: 1px solid #57a3f3;
+                "/><button style="float: left;height: 40px;width:50px;margin-left:20px;border: 1px solid #57a3f3;color: #57a3f3;background-color: white;">发送</button>
               </div>
             </div>
         </div>
@@ -74,7 +75,7 @@
   #ElementWind {
     
     text-align: right;
-    width: 450px;
+    width: 400px;
     height: 400px;
     position: absolute;
     bottom: 3px;
@@ -123,7 +124,7 @@
   #imgContent {
     height: 80%;
     padding: 2px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #57a3f3;
     /* margin-top: -21px; */
     /* overflow-y: scroll; */
     /* word-break: break-all */
