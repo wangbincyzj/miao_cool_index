@@ -1,26 +1,29 @@
 <template>
   <div class="index">
-    <div style="position:fixed; right: 10px;top:40%;"><button  style="color:red;font-size: 20px;">在线客服</button></div>
-    <Mywin/>
-    <IndexVideo/>
-    
+    <IndexBanner/>
+    <IndexIntro/>
+    <IndexService/>
+    <IndexAboutUs/>
   </div>
 </template>
 
 <script>
-import IndexVideo from "@/views/index/IndexVideo";
 import Mywin from "@/components/dialog/Mywin"
+import IndexBanner from "@/views/index/IndexBanner";
+import IndexIntro from "@/views/index/IndexIntro";
+import IndexService from "@/views/index/IndexService";
+import IndexAboutUs from "@/views/index/IndexAboutUs";
+
 export default {
   name: "Index",
-  components: {IndexVideo,Mywin},
-  methods: {
-
-  }
+  components: {IndexAboutUs, IndexService, IndexIntro, IndexBanner, Mywin},
+  methods: {}
 }
 </script>
 
 <style scoped lang="scss">
-.index{
+.index {
   width: 100%;
+  padding-bottom: 500px;
 }
 </style>

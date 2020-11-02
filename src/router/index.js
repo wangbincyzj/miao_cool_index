@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Layout from "@/views/_layout/Layout";
+import Layout404 from "@/views/_layout/Layout404";
 
 Vue.use(VueRouter)
 
@@ -38,6 +39,10 @@ const routes = [
       }
     ]
   },
+  {
+    path: "/*",
+    component: Layout404
+  }
 ]
 
 const router = new VueRouter({

@@ -1,16 +1,18 @@
 <template>
   <div class="layout">
-    <Header/>
+<!--    <Header/>-->
+    <HeaderNew/>
     <router-view class="container-fluid"/>
   </div>
 </template>
 
 <script>
 import Header from "@/views/_layout/Header";
+import HeaderNew from "@/views/_layout/HeaderNew";
 
 export default {
   name: "Layout",
-  components: {Header},
+  components: {HeaderNew, Header},
 }
 </script>
 
