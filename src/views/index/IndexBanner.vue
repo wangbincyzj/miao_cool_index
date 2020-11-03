@@ -1,6 +1,6 @@
 <template>
   <div class="img-wrapper">
-    <img :class="[grow? 'grow': '']" src="~@/assets/images/index/banner.png" alt="">
+    <img :class="[grow? 'grow': '']" src="https://s1.ax1x.com/2020/11/02/BrJldK.png" alt="">
     <div class="text-area col">
       <span class="title">喵酷为您创造更大商业价值</span>
       <div class="rich-text">

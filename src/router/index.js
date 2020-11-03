@@ -44,9 +44,14 @@ const routes = [
     component: Layout404
   }
 ]
-
+/*
+* https://imgchr.com/i/BrJQZ6
+https://imgchr.com/i/BrJldK
+https://imgchr.com/i/BrJ1IO
+https://imgchr.com/i/BrJKqx
+https://imgchr.com/i/BrJus1*/
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })
